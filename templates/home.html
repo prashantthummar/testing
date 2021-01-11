@@ -1,0 +1,46 @@
+<!-- {% load rest_framework %}
+
+...
+
+<form action="{% url 'home' %}" method="post" novalidate>
+    {% csrf_token %}
+   
+    <button type="submit" class="btn btn-default">Sign in</button>
+</form>
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>students api</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ </head>
+<body>
+<div>
+   <button class="apireq">click me </button> 
+</div>
+<div id="jsonresp" style="margin-top: 100px">
+   <p><label> First name :</label> <span id="firstName"></span></p>
+   <p><label> Last name :</label> <span id="lastName"></span></p>
+   <p><label> age :</label> <span id="age"></span></p>
+   <p><label> gender : </label> <span id="gender"></span></p> 
+</div>
+    <script type="text/javascript">
+    
+$('.apireq').click( function() {
+    $.ajax({
+             url : "http://localhost:8000/std",
+             dataType: "json",
+             success : function (data) {
+                      $('#firstName').text( data[0].firstName);
+                      $('#lastName').text( data[0].lastName);
+                      $('#age').text( data[0].age);
+                      $('#gender').text( data[0].gender);
+                    }
+                 });
+             });
+            </script>
+</body>
+</html> -->
+
+
+<a href="#" class="font-weight-bold">Learn more</a>
